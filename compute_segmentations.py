@@ -23,7 +23,7 @@ from prs_hook import hook_prs_logger
 def get_args_parser():
     parser = argparse.ArgumentParser(description='Segmentation scores')
     parser.add_argument('--save_img', action='store_true',
-                        default=False,
+                        default=True,
                         help='')
     parser.add_argument('--train_dataset', type=str, default='imagenet_seg', help='The name of the dataset')
     parser.add_argument('--classifier_dataset', type=str, default='imagenet', help='The name of the classifier dataset')
